@@ -156,7 +156,7 @@ void word_search(const vector<vector<char> > & v, const unordered_set<string> & 
 int main()
 {
     vector<vector<char> > v;
-    ifstream pz("/Users/yueqisu/Dropbox/SCU/2016-17/FALL 16/CSCI 61/HW/HW4/puzzle.txt");
+    ifstream pz("puzzle.txt");
     if (pz.fail()){
         cout<<"Can't open puzzle!"<<endl;
         exit(1);
@@ -174,7 +174,7 @@ int main()
     pz.close();
 
     unordered_set<string> dictionary;
-    ifstream ds("/Users/yueqisu/Dropbox/SCU/2016-17/FALL 16/CSCI 61/HW/HW4/words.txt");
+    ifstream ds("words.txt");
     if (ds.fail()){
         cout<<"Can't open dictionary!"<<endl;
         exit(1);
